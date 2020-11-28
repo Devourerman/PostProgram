@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.articleView">
+    <children>
+        <Label layoutX="181.0" layoutY="2.0" text="Обзор статьи" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="35.0" />
+            </font>
+        </Label>
+        <Button fx:id="button_exit" ellipsisString="" mnemonicParsing="false" prefHeight="38.0" prefWidth="57.0" stylesheets="@../Styles/style.css" text="&lt;" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="21.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" layoutY="84.0" prefHeight="318.0" prefWidth="600.0" styleClass="text-input" stylesheets="@../Styles/text-area.css">
+         <content>
+            <VBox fx:id="intro" prefHeight="318.0" prefWidth="601.0" style="-fx-background-color: #343434;" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="title" alignment="CENTER" layoutX="-1.0" layoutY="58.0" prefHeight="26.0" prefWidth="600.0" promptText="Название статьи" style="-fx-background-color: #343434;" styleClass="text-input" stylesheets="@../Styles/text-area.css">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

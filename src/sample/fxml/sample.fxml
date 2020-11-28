@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.RegController">
+   <children>
+      <CheckBox fx:id="confidentional" layoutX="41.0" layoutY="268.0" mnemonicParsing="false" textFill="WHITE" underline="true">
+         <graphic>
+            <Hyperlink styleClass="link" stylesheets="@../Styles/style.css" text="Пользовательское соглашение" textFill="WHITE" />
+         </graphic>
+      </CheckBox>
+      <Label layoutX="48.0" layoutY="44.0" text="Регистрация" textFill="#f8f8f8">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="337.0" layoutY="44.0" text="Авторизация" textFill="#f8f8f8">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login_reg" focusTraversable="false" layoutX="42.0" layoutY="102.0" promptText="login" styleClass="text-input" stylesheets="@../Styles/style.css">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" focusTraversable="false" layoutX="42.0" layoutY="155.0" promptText="email" styleClass="text-input" stylesheets="@../Styles/style.css">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password_reg" focusTraversable="false" layoutX="42.0" layoutY="208.0" promptText="password" stylesheets="@../Styles/style.css">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="button_reg" layoutX="41.0" layoutY="308.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="191.0" stylesheets="@../Styles/style.css" text="Зарегистрироваться" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="login_aut" focusTraversable="false" layoutX="337.0" layoutY="96.0" promptText="login" styleClass="text-input" stylesheets="@../Styles/style.css">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password_aut" focusTraversable="false" layoutX="337.0" layoutY="149.0" promptText="password" stylesheets="@../Styles/style.css">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="button_auth" layoutX="370.0" layoutY="208.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="109.0" stylesheets="@../Styles/style.css" text="Войти" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
